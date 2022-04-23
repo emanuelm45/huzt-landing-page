@@ -23,12 +23,13 @@ header {
 }
 
 #logo-header {
-    width: min(25rem, 40vw);
+    width: min(25rem, 50vw);
 }
 
 .menu__item {
     color: rgb(219, 219, 219);
     font-size: min(2.5rem, 4vw);
+    margin-top: 1rem;
 }
 
 .menu__item:not(:last-child) {
