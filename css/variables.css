@@ -10,6 +10,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -22,6 +24,10 @@ body {
 img {
     display: block;
     width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
 
 header {
