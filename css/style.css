@@ -1,0 +1,52 @@
+@import url(variables.css);
+
+main {
+    max-width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    place-items: center;
+    gap: 4rem;
+    padding-top: 5rem;
+}
+
+#foto-drop {
+    border: 2px solid var(--color-white);
+    filter: saturate(0%);
+    cursor: pointer;
+}
+
+#foto-huzt {
+    border: 2px solid var(--color-white);
+    filter: saturate(0%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#foto-drop:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: saturate(200%);
+    border: solid var(--color-white) 5px;
+}
+
+#foto-huzt:hover {
+    transform: scale(1.1);
+    filter: saturate(200%);
+    border: solid var(--color-white) 5px;
+}
+
+footer {
+    font-size: min(1.4rem, 3.4vw);
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+    margin-top: 8rem;
+    height: 3rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        max-width: 80%;
+    }
+}

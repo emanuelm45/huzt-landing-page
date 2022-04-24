@@ -1,0 +1,51 @@
+@import url(variables.css);
+
+main {
+    text-align: center;
+    
+}
+
+#titulo-drop-3 {
+    margin-top: 2rem;
+    color: transparent;
+    font-family: medieval;
+    font-size: min(90px, 12vw);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--color-off-white);
+}
+
+.produto-container {
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 4rem;
+}
+
+.produto {
+
+}
+
+#camiseta-roxa{
+    
+}
+.nome-produto{
+    margin-top: 1rem;
+    color: var(--color-white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: min(1.4rem, 4vw);
+}
+
+.nome-produto .huzt-strong {
+    color: var(--color-white);
+}
+
+footer {
+    font-size: min(1.4rem, 3.4vw);
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+    margin-top: 5rem;
+    height: 3rem;
+}

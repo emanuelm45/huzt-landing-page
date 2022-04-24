@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'medieval';
+    src: url(OldLondon.ttf) format('truetype'),
+    url(OldLondonAlternate.ttf) format('truetype'),
+    url(Olondon_.otf) format('opentype'),
+    url(Olondona.otf) format('opentype');
+}
