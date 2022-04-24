@@ -24,12 +24,11 @@ main {
 }
 
 .produto {
-
+    cursor: pointer;
 }
 
-#camiseta-roxa{
-    
-}
+#camiseta-roxa
+
 .nome-produto{
     margin-top: 1rem;
     color: var(--color-white);
