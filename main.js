@@ -6,5 +6,5 @@ imgProducts.addEventListener("click", () => {
 })
 
 imgHuzt.addEventListener("click", () => {
-    location.href = "/about.html"
+    location.href = "./about.html"
 })
