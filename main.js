@@ -1,10 +1,10 @@
-const fotoDrop = document.querySelector("#foto-drop")
-const fotoHuzt = document.querySelector("#foto-huzt")
+const imgProducts = document.querySelector("#img-products")
+const imgHuzt = document.querySelector("#img-huzt")
 
-fotoDrop.addEventListener("click", () => {
+imgProducts.addEventListener("click", () => {
     location.href = "/shop.html"
 })
 
-fotoHuzt.addEventListener("click", () => {
+imgHuzt.addEventListener("click", () => {
     location.href = "/about.html"
 })

@@ -2,94 +2,111 @@
 
 main {
     text-align: center;
-    
 }
 
-#titulo-drop-3 {
+#title-drop-3 {
     margin-top: 2rem;
     color: transparent;
     font-family: medieval;
-    font-size: min(90px, 12vw);
-    -webkit-text-stroke-width: 2px;
+    font-size: min(9rem, 12vw);
+    -webkit-text-stroke-width: .01vw;
     -webkit-text-stroke-color: var(--color-off-white);
 }
 
-.produto-container {
-    margin: 0 auto;
+.products-container {
+    margin: 5rem auto 0;
     margin-top: 3rem;
     max-width: 70%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 4rem;
 }
 
-.produto {
+.product {
     position: relative;
     cursor: pointer;
-    transition: all 0.2s;
-    padding-bottom: 15px;
+    transition: all .2s;
+    padding-bottom: 5rem;
 }
 
-.produto #camiseta-preta, 
-.produto #camiseta-branca,
-.produto #camiseta-drop1,
-.produto #balaclava {
+.product:hover{
+    border: solid 2px var(--color-light-gray);
+}
+.product:hover:not(.product--muted) .btn-buy {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+
+.product--muted img {
     opacity: 55%;
     transition: all .3s;
 }
+.product--muted .btn-buy {
+    pointer-events: none;
+    opacity: 50%;
+}
 
-.produto:hover{
-    border: solid 3px var(--color-white);
+.product__description {
+    padding: 1.5rem;
+}
+
+.product__name{
+    margin-top: 1rem;
+    color: var(--color-white);
+    font-size: min(2.2rem, 4vw);
+}
+
+.product__name .huzt-strong {
+    color: var(--color-white);
 }
 
 .price {
     color: var(--color-white);
-    font-size: min(1.4rem, 3vw);
+    font-size: min(3rem, 5vw);
     margin-top: .5rem;
 }
 
-.nome-produto{
-    margin-top: 1rem;
-    color: var(--color-white);
-    font-size: min(1.6rem, 4vw);
+.tee-container {
+    position: relative;
 }
 
-.nome-produto .huzt-strong {
-    color: var(--color-white);
-}
-
-.esgotado {
+.sold {
     position: absolute;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
-    color: transparent;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
     white-space: nowrap;
     font-family: medieval;
-    font-size: min(2.6rem, 7vw);
+    font-size: min(4rem, 10vw);
     transition: all .5s;
 }
 
-.produto:hover .esgotado {
-    font-size: min(3.6rem, 7vw);
-    -webkit-text-stroke-width: 2.5px;
+.product:hover .sold {
+    font-size: min(5rem, 15vw);
+    -webkit-text-stroke-width: .1vw;
     -webkit-text-stroke-color: var(--color-off-white);
 }
 
-#botao-buy{
-    width: 40%;
+.btn-buy{
+    position: absolute;
+    left: 50%;
+    bottom: .5rem;
+    transform: translate(-50%);
+    width: 15rem;
     padding: .6rem;
     margin: 1rem 0;
     border-radius: .1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     background-color: transparent;
     border: 1px solid var(--color-white);
     color: var(--color-white);
     transition: all 0.5s;
 }
 
-#botao-buy:hover{
-    transform: scale(1.1);
+.btn-buy:hover{
+    width: 13rem;
     background-color: var(--color-white);
     color: var(--color-black);
 }
@@ -99,6 +116,6 @@ footer {
     text-align: center;
     color: var(--color-white);
     position: relative;
-    margin-top: 5rem;
-    height: 3rem;
+    margin-top: 10rem;
+    height: 2rem;
 }
