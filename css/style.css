@@ -1,48 +1,46 @@
 @import url(variables.css);
 
 main {
-    max-width: 50%;
+    max-width: 55%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-areas: 
+    "img-shop img-lookbook"
+    "img-shop img-huzt";
     place-items: center;
-    gap: 5rem;
+    column-gap: 3rem;
+    row-gap: 2rem;
     padding-top: 5rem;
 }
 
-#img-products {
+#img-shop,
+#img-huzt,
+#img-lookbook {
+    grid-area: img-shop;
     transition: all 0.5s;
     border: 2px solid var(--color-white);
     filter: saturate(0%);
     cursor: pointer;
 }
 
-#img-huzt {
-    border: 2px solid var(--color-white);
-    filter: saturate(0%);
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-#img-products:hover {
-    transform: scale(1.1);
-    filter: saturate(200%);
-    border: solid var(--color-white) 5px;
-}
-
+#img-shop:hover,
+#img-lookbook:hover,
 #img-huzt:hover {
     transform: scale(1.1);
     filter: saturate(200%);
-    border: solid var(--color-white) 5px;
+    border: solid var(--color-white) 4px;
 }
 
-footer {
-    font-size: min(1.4rem, 3.4vw);
-    text-align: center;
-    color: var(--color-white);
-    position: relative;
-    margin-top: 8rem;
-    height: 3rem;
+
+#img-shop {
+    grid-area: img-shop;
+    height: 100%;
+}
+#img-lookbook {
+    grid-area: img-lookbook;
+} 
+#img-huzt {
+    grid-area: img-huzt;
 }
 
 @media (max-width: 700px) {

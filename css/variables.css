@@ -34,6 +34,10 @@ button {
     cursor: pointer;
 }
 
+[alt] {
+    color: var(--color-white);
+}
+
 header {
     display: flex;
     align-items: center;
@@ -62,4 +66,12 @@ header {
 
 .menu__item:hover {
     text-decoration: underline;
+}
+
+footer {
+    font-size: min(1.4rem, 3.4vw);
+    text-align: center;
+    color: var(--color-white);
+    margin-top: 8rem;
+    height: 3rem;
 }

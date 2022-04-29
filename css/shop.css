@@ -26,22 +26,23 @@ main {
     position: relative;
     cursor: pointer;
     transition: all .2s;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
-.product:hover{
+.product:hover {
     border: solid 2px var(--color-light-gray);
 }
+
 .product:hover:not(.product--muted) .btn-buy {
     background-color: var(--color-white);
     color: var(--color-black);
 }
 
-
 .product--muted img {
     opacity: 55%;
     transition: all .3s;
 }
+
 .product--muted .btn-buy {
     pointer-events: none;
     opacity: 50%;
@@ -51,7 +52,7 @@ main {
     padding: 1.5rem;
 }
 
-.product__name{
+.product__name {
     margin-top: 1rem;
     color: var(--color-white);
     font-size: min(2.2rem, 4vw);
@@ -69,6 +70,15 @@ main {
 
 .tee-container {
     position: relative;
+}
+
+#purple-tee-front,
+#red-tee-front {
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    transition: all 1s;
 }
 
 .sold {
@@ -90,11 +100,11 @@ main {
     font-size: min(5rem, 15vw);
 }
 
-.btn-buy{
-    position: absolute;
+.btn-buy {
+    /* position: absolute;
     left: 50%;
     bottom: .5rem;
-    transform: translate(-50%);
+    transform: translate(-50%); */
     width: 15rem;
     padding: .6rem;
     margin: 1rem 0;
@@ -106,17 +116,8 @@ main {
     transition: all 0.5s;
 }
 
-.btn-buy:hover{
+.btn-buy:hover {
     width: 13rem;
     background-color: var(--color-white);
     color: var(--color-black);
-}
-
-footer {
-    font-size: min(1.4rem, 3.4vw);
-    text-align: center;
-    color: var(--color-white);
-    position: relative;
-    margin-top: 10rem;
-    height: 2rem;
 }
