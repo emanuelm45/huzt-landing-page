@@ -19,7 +19,7 @@ main {
 }
 
 .text-about {
-    max-width: 50%;
+    max-width: min(70rem, 80vw);
     color: var(--color-white);
     font-size: min(3rem, 5vw);
     text-align: center;

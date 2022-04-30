@@ -76,8 +76,17 @@ main {
     top: 0;
     position: absolute;
     z-index: -1;
-    opacity: 30%;
-    transition: all 1s;
+    opacity: 70%;
+    animation: changeShirtFront 3s ease infinite;
+}
+
+@keyframes changeShirtFront {
+
+    100% {
+        z-index: 1;
+        opacity: 100%;
+    }
+
 }
 
 .sold {
@@ -100,10 +109,6 @@ main {
 }
 
 .btn-buy {
-    /* position: absolute;
-    left: 50%;
-    bottom: .5rem;
-    transform: translate(-50%); */
     width: 15rem;
     padding: .6rem;
     margin: 1rem 0;

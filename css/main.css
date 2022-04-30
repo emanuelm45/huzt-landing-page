@@ -8,8 +8,8 @@ main {
     "img-shop img-lookbook"
     "img-shop img-huzt";
     place-items: center;
-    column-gap: 3rem;
-    row-gap: 2rem;
+    column-gap: min(3rem, 3vh);
+    row-gap: min(2rem, 2vh);
 }
 
 #img-shop,
@@ -42,12 +42,17 @@ main {
     grid-area: img-huzt;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     main {
         max-width: 80%;
     }
 }
 
-.menu {
-    display: none;
+@media (max-width: 600px) {
+    main {
+        grid-template-areas: 
+        "img-shop img-shop"
+        "img-lookbook img-lookbook"
+        "img-huzt img-huzt";
+    }
 }

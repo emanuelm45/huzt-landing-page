@@ -1,24 +1,10 @@
-const purpleShirt = document.querySelector("#purple-tee")
-const redShirt = document.querySelector("#red-tee")
-const purpleShirtFront = document.querySelector("#purple-tee-front")
-const redShirtFront = document.querySelector("#red-tee-front")
+const productName = document.querySelector(".product__name")
+const btnsBuy = document.querySelectorAll(".btn-buy")
 
-function changeShirt() {
-  setInterval(() => {
-    purpleShirtFront.style.zIndex = 1
-    purpleShirtFront.style.opacity = "100%"
-    purpleShirt.style.opacity = "70%"
-    redShirtFront.style.zIndex = 1
-    redShirtFront.style.opacity = "100%"
-    redShirt.style.opacity = "70%"
-  }, 2500);
-  
-  setInterval(() => {
-    purpleShirtFront.style.zIndex = -1
-    purpleShirt.style.opacity = "100%"
-    redShirtFront.style.zIndex = -1
-    redShirt.style.opacity = "100%"
-  }, 4000);
+btnsBuy.forEach(btnBuy => {
+    btnBuy.addEventListener("click", redirectWhatsapp)
+})
+
+function redirectWhatsapp() {
+    window.location.href = "http://wa.me/5547996864477?text=Eu+gostaria+de+comprar%3A+%0D%0A" + "*" + productName.textContent + "*"
 }
-
-window.onload = changeShirt()
