@@ -23,8 +23,9 @@ body {
     min-height: 100vh;
     width: 100%;
     background-color: var(--color-black);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
 }
 
 img {
@@ -74,7 +75,5 @@ footer {
     font-size: min(1.4rem, 3.4vw);
     text-align: center;
     color: var(--color-white);
-    /* margin-top: calc(100vh - 90vh); */
-    margin-top: auto;
 }
 
