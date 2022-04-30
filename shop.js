@@ -11,7 +11,7 @@ function changeShirt() {
     redShirtFront.style.zIndex = 1
     redShirtFront.style.opacity = "100%"
     redShirt.style.opacity = "70%"
-  }, 2000);
+  }, 2500);
   
   setInterval(() => {
     purpleShirtFront.style.zIndex = -1
