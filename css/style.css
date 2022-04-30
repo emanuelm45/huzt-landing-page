@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import 'variables.css';
 
 main {
     max-width: 55%;
@@ -10,7 +10,7 @@ main {
     place-items: center;
     column-gap: 3rem;
     row-gap: 2rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 #img-shop,
@@ -47,4 +47,8 @@ main {
     main {
         max-width: 80%;
     }
+}
+
+.menu {
+    display: none;
 }
