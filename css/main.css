@@ -44,7 +44,7 @@ main {
 
 @media (max-width: 800px) {
     main {
-        max-width: 80%;
+        max-width: 75%;
     }
 }
 

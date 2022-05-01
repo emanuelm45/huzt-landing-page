@@ -120,8 +120,8 @@ main {
     transition: all 0.5s;
 }
 
-.btn-buy:hover {
+/* .btn-buy:hover {
     width: 13rem;
     background-color: var(--color-white);
     color: var(--color-black);
-}
+} */
