@@ -123,3 +123,9 @@ main {
     background-color: var(--color-white);
     color: var(--color-black);
 }
+
+@media (max-width: 550px) {
+    main {
+        margin-top: 16rem;
+    }
+}
