@@ -2,20 +2,22 @@
 
 main {
     min-height: 60vh;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
 }
 
-#title-about {
-    color: var(--color-white);
-    margin-bottom: 1rem;
-    color: transparent;
+#title-huzt {
     font-family: medieval;
-    font-size: min(9rem, 12vw);
-    -webkit-text-stroke-width: .01vw;
-    -webkit-text-stroke-color: var(--color-off-white);
+    color: var(--color-white);
+    font-size: min(15rem, 25vw);
+    margin: 0 auto 2.5rem;
+    user-select: none;
+    transform: translateY(-4rem);
+    opacity: .1;
+    filter: drop-shadow(3rem 1rem .5rem var(--color-light-purple));
+    animation: slide-in .8s ease forwards;
 }
 
 .text-about {
@@ -23,4 +25,20 @@ main {
     color: var(--color-white);
     font-size: min(3rem, 5vw);
     text-align: center;
+    transform: translateY(6rem);
+    opacity: 0.1;
+    animation: slide-in .8s ease forwards;
+}
+
+@keyframes slide-in {
+
+    0% {
+        pointer-events: none;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: initial;
+    }
 }

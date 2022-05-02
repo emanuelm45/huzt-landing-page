@@ -2,14 +2,12 @@
 
 main {
     text-align: center;
+    margin-top: 22rem;
 }
 
-#title-drop-3 {
-    color: transparent;
-    font-family: medieval;
-    font-size: min(9rem, 12vw);
-    -webkit-text-stroke-width: .01vw;
-    -webkit-text-stroke-color: var(--color-off-white);
+#img-title-drop-3 {
+    width: min(25rem, 40%);
+    margin: 0 auto;
 }
 
 .products-container {
@@ -38,13 +36,13 @@ main {
 }
 
 .product--muted img {
-    opacity: 55%;
+    opacity: .55;
     transition: all .3s;
 }
 
 .product--muted .btn-buy {
     pointer-events: none;
-    opacity: 50%;
+    opacity: .5;
 }
 
 .product__description {
@@ -76,7 +74,7 @@ main {
     top: 0;
     position: absolute;
     z-index: -1;
-    opacity: 70%;
+    opacity: .7;
     animation: changeShirtFront 3s ease infinite;
 }
 
@@ -84,7 +82,7 @@ main {
 
     100% {
         z-index: 1;
-        opacity: 100%;
+        opacity: 1;
     }
 
 }
@@ -120,8 +118,8 @@ main {
     transition: all 0.5s;
 }
 
-/* .btn-buy:hover {
+.btn-buy:hover {
     width: 13rem;
     background-color: var(--color-white);
     color: var(--color-black);
-} */
+}

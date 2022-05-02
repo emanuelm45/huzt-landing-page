@@ -1,0 +1,91 @@
+@import 'variables.css';
+
+main {
+    max-width: 55%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "img-shop img-lookbook"
+        "img-shop img-huzt";
+    place-items: center;
+    column-gap: min(3rem, 3vh);
+    row-gap: 1rem;
+}
+
+header {
+    position: static;
+    z-index: 999;
+    transform: translateX(0);
+}
+
+#img-shop,
+#img-huzt,
+#img-lookbook {
+    grid-area: img-shop;
+    transition: all .4s;
+    border: 2px solid var(--color-white);
+    filter: saturate(0%);
+    cursor: pointer;
+    opacity: .2;
+    animation: slide-in .8s ease forwards;
+}
+
+#img-shop:hover,
+#img-lookbook:hover,
+#img-huzt:hover {
+    width: calc(100% + 1rem);
+    filter: saturate(200%);
+    opacity: 1;
+}
+
+
+#img-shop {
+    grid-area: img-shop;
+    height: 99%;
+    transform: translateX(-6rem);
+}
+
+#img-lookbook {
+    grid-area: img-lookbook;
+    transform: translateX(3rem);
+}
+
+#img-huzt {
+    grid-area: img-huzt;
+    transform: translateX(6rem);
+}
+
+@keyframes slide-in {
+
+    0% {
+        pointer-events: none;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: initial;
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-areas:
+            "img-shop img-shop"
+            "img-lookbook img-lookbook"
+            "img-huzt img-huzt";
+        row-gap: 3rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 10in00px) {
+    #img-shop {
+        height: 94%;
+    }
+}
