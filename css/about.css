@@ -12,7 +12,7 @@ main {
     font-family: medieval;
     color: var(--color-white);
     font-size: min(15rem, 25vw);
-    margin: 0 auto 4rem;
+    margin: 0 auto;
     user-select: none;
     transform: translateY(-4rem);
     opacity: .1;
@@ -40,5 +40,11 @@ main {
         transform: translateX(0);
         opacity: 1;
         pointer-events: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-about {
+        margin-top: 6rem;
     }
 }
