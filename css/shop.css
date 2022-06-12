@@ -10,6 +10,8 @@ main {
     margin: 0 auto;
 }
 
+/* ----- PRODUCTS ----- */
+
 .products-container {
     margin: 5rem auto 0;
     margin-top: 3rem;
@@ -26,13 +28,12 @@ main {
     padding-bottom: 3rem;
 }
 
-.product:hover {
-    border: solid 2px var(--color-light-gray);
+.product:hover:not(.product--muted){
+    transform: scale(0.98);
 }
 
 .product:hover:not(.product--muted) .btn-buy {
-    background-color: var(--color-white);
-    color: var(--color-black);
+    transform: scale(1.1);
 }
 
 .product--muted img {
@@ -103,7 +104,7 @@ main {
 }
 
 .product:hover .sold {
-    font-size: min(5rem, 15vw);
+    font-size: min(4.5rem, 15vw);
 }
 
 .btn-buy {
@@ -119,10 +120,12 @@ main {
 }
 
 .btn-buy:hover {
-    width: 13rem;
-    background-color: var(--color-white);
+    width: 14rem;
+    background-color: var(--color-off-white);
     color: var(--color-black);
 }
+
+/* -------------------- */ 
 
 @media (max-width: 550px) {
     main {

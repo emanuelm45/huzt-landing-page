@@ -5,32 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huzt Company</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script defer async src="js/index.js"></script>
+    <title>Huzt Website</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <script defer async src="js/shop.js"></script>
 </head>
 
 <body>
     <header>
         <img id="logo-header" src="images/logo.png">
-        <!-- <div class="menu">
-            <a class="menu__item" href="index.html">HOME</a>
-            <a class="menu__item" href="shop.html">SHOP</a>
-            <a class="menu__item" href="#">LOOKBOOK</a>
+        <div class="menu">
+            <!-- <a class="menu__item" href="index.html">HOME</a> -->
+            <a class="menu__item selected" href="#">SHOP</a>
+            <a class="menu__item" href="lookbook.html">LOOKBOOK</a>
             <a class="menu__item" href="about.html">"HUZT"</a>
-        </div> -->
+        </div>
     </header>
 
     <main>
-        <img id="img-shop" src="images/img-shop.png" alt="Shop Image Link">
-        <img id="img-huzt" src="images/img-huzt.png" alt="Huzt Image Link">
-        <img id="img-lookbook" src="images/img-lookbook.png" alt="Lookbook Image Link">
+        <img id="img-title-drop-3" src="images/text-drop.png" alt="Text Drops">
+        <div class="products-container">
+            <div class="product">
+                <div class="tee-container">
+                    <img id="purple-tee" src="images/purple.png" alt="Purple T-Shirt">
+                    <img id="purple-tee-front" src="images/purple-front.png" alt="Purple T-Shirt">
+                </div>
+                <div class="product__description">
+                    <p class="product__name"><strong class="huzt-strong">Huzt</strong> Arabic T-Shirt - Purple</p>
+                    <p class="price"><strong>R$80,00</strong></p>
+                </div>
+                <button class="btn-buy"><strong>BUY</strong></button>
+            </div>
+            <div class="product">
+                <img id="red-tee" src="images/red.png" alt="Red T-Shirt">
+                <img id="red-tee-front" class="tee-hidden" src="images/red-front.png" alt="Red T-Shirt">
+                <div class="product__description">
+                    <p class="product__name"><strong class="huzt-strong">Huzt</strong> Arabic T-Shirt - Red</p>
+                    <p class="price"><strong>R$80,00</strong></p>
+                </div>
+                <button class="btn-buy"><strong>BUY</strong></button>
+            </div>
+            <div class="product product--muted">
+                <div class="tee-container">
+                    <img id="balaclava" src="images/balaclava.png">
+                    <p class="sold">Coming Soon</p>
+                </div>
+                <div class="product__description">
+                    <p class="product__name"><strong class="huzt-strong">Huzt</strong> Balaclava - DROP3</p>
+                    <p class="price"><strong>COMING SOON</strong></p>
+                </div>
+                <button class="btn-buy"><strong>BUY</strong></button>
+            </div>
+            <div class="product product--muted">
+                <div class="tee-container">
+                    <img id="black-tee" src="images/black-back.jpg">
+                    <p class="sold">Sold Out</p>
+                </div>
+                <div class="product__description">
+                    <p class="product__name"><strong class="huzt-strong">Huzt</strong> All Dreams Reserverd T-Shirt
+                        -
+                        DROP2</p>
+                </div>
+                <button class="btn-buy"><strong>BUY</strong></button>
+            </div>
+            <div class="product product--muted">
+                <div class="tee-container">
+                    <img id="white-tee" src="images/white-back.jpg">
+                    <p class="sold">Sold Out</p>
+                </div>
+                <div class="product__description">
+                    <p class="product__name"><strong class="huzt-strong">Huzt</strong> All Dreams Reserverd T-Shirt
+                        -
+                        DROP2</p>
+                </div>
+                <button class="btn-buy"><strong>BUY</strong></button>
+            </div>
+            <div class="product product--muted">
+                <div class="tee-container">
+                    <img id="drop1-tee" src="images/drop1-front.png">
+                    <p class="sold">Sold Out</p>
+                </div>
+                <div class="product__description">
+                    <p class="product__name"><strong class="huzt-strong">Huzt</strong> All Dreams Reserved T-Shirt -
+                        DROP1</p>
+                </div>
+                <button class="btn-buy"><strong>BUY</strong></button>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <p>All rights reserved to HuztCompany
-            &reg;</p>
-        <p>Developed by @arthurlemosgr @emanuelmaarques.</p>
+        <div class="text">
+            <p>All rights reserved to HuztCompany
+                &reg;</p>
+            <p>Developed by @emanuelmaarques @arthurlemosgr.</p>
+        </div>
     </footer>
 </body>
 

@@ -1,3 +1,4 @@
+// REDIRECT TO WHATSAPP
 const productName = document.querySelectorAll(".product__name")
 const productPrice = document.querySelectorAll(".price")
 const btnsBuy = document.querySelectorAll(".btn-buy")
@@ -14,3 +15,10 @@ function redirectWhatsapp(event) {
         window.location.href = `http://wa.me/5547996864477?text=Eu+gostaria+de+comprar%3A+%0D%0A  _${encodeURI(productName[1].innerText)}_ %0D%0A *${productPrice[1].innerText}* `
     }
 }
+
+// REDIRECT TO INSTAGRAM
+const logo = document.querySelector("#logo-header")
+
+logo.addEventListener("click", function() {
+    window.location.href = "https://www.instagram.com/huztcompany/"
+})

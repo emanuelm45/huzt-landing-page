@@ -10,13 +10,14 @@ main {
 
 #title-huzt {
     font-family: medieval;
-    color: var(--color-white);
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-white);
     font-size: min(15rem, 25vw);
     margin: 0 auto;
     user-select: none;
     transform: translateY(-4rem);
     opacity: .1;
-    filter: drop-shadow(3rem 1rem .5rem var(--color-light-purple));
     animation: slide-in .8s ease forwards;
 }
 

@@ -1,8 +1,9 @@
 :root {
     --color-black: rgb(0, 0, 0);
     --color-white: rgb(255, 255, 255);
-    --color-off-white: rgb(226, 226, 226);
-    --color-light-gray: rgb(34, 34, 34);
+    --color-off-white: rgb(221, 221, 221);
+    --color-light-gray: rgb(104, 104, 104);
+    --color-light-gray-muted: rgba(104, 104, 104, .3);
     --color-light-purple: rgb(142, 99, 205);
 }
 
@@ -68,7 +69,7 @@ header {
 
 .menu__item {
     color: var(--color-off-white);
-    font-size: min(3.5rem, 4vw);
+    font-size: min(3.5rem, 5vw);
     position: relative;
 }
 
@@ -98,11 +99,17 @@ header {
 }
 
 footer {
+    height: 5rem;
     font-size: min(1.4rem, 3.4vw);
     text-align: center;
     color: var(--color-white);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end; */
+}
+
+footer .text {
+    border-top: 1px solid var(--color-light-gray-muted);
+    border-bottom: 1px solid var(--color-light-gray-muted);
 }
